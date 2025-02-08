@@ -152,7 +152,7 @@ export default function App() {
       <TextInput placeholder="Confirmar Senha" secureTextEntry onChangeText={(value) => handleChange('confirmarSenha', value)} style={styles.input} />
 
       {Object.keys(errors).map((key) => errors[key] && <Text key={key} style={styles.error}>{errors[key]}</Text>)}
-      <Button title="Cadastrar" onPress={() => console.log(form)} />
+      <Button title="Cadastrar" onPress={() => (console.log(form), alert('Cadastro realizado! :)'))} />
     </View>
   );
 }
